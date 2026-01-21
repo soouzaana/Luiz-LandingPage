@@ -82,7 +82,19 @@
 
           <!-- TEXTO -->
           <div class="col-lg-7">
-            <h2 class="size-min mb-4">SOBRE MIM</h2>
+            <h2 class="fs-6 fw-bold size-min">SOBRE MIM</h2>
+
+            <!-- DESCRIÇÃO -->
+            <p class="mb-4 description">
+              Sou Luiz, engenheiro elétrico com mais de 10 anos de experiência em
+              projetos elétricos residenciais, comerciais e industriais. Especializado
+              em sistemas de energia solar fotovoltaica, ofereço soluções inovadoras
+              e sustentáveis para otimizar o consumo energético dos meus clientes.
+              Minha abordagem combina conhecimento técnico com atenção aos detalhes,
+              garantindo eficiência, segurança e conformidade com as normas vigentes.
+              Estou comprometido em entregar projetos de alta qualidade que atendam
+              às necessidades específicas de cada cliente.
+            </p>
 
             <!-- LISTA -->
             <ul class="about-list">
@@ -108,7 +120,7 @@
             <div class="row g-3 mt-4">
               <div class="col-md-6">
                 <div class="info-badge">
-                  <div class="badge-icon">🎓</div>
+                  <div class="icon"><div class="badge-icon"><Hat/></div></div>
                   <div>
                     <strong>Formação</strong>
                     <p>Engenharia Elétrica</p>
@@ -117,8 +129,8 @@
               </div>
 
               <div class="col-md-6">
-                <div class="info-badge">
-                  <div class="badge-icon">✔</div>
+                <div class="info-badge"><div class="icon">
+                  <div class="badge-icon"><Work/></div></div>
                   <div>
                     <strong>CREA Ativo</strong>
                     <p>Registro profissional regular</p>
@@ -126,7 +138,17 @@
                 </div>
               </div>
             </div>
+            
+         
+          </div>
+          <hr style="height:1px;"/>
 
+          <!-- ESTATÍSTICAS -->
+          <div class="row text-center mt-2 g-4 stats">
+            <div class="col-md-3"><strong>10+</strong><p>Anos de experiência</p></div>
+            <div class="col-md-3"><strong>200+</strong><p>Projetos realizados</p></div>
+            <div class="col-md-3"><strong>150+</strong><p>Clientes satisfeitos</p></div>
+            <div class="col-md-3"><strong>500kW</strong><p>Energia solar instalada</p></div>
           </div>
         </div>
       </div>
@@ -361,15 +383,19 @@
 }
 
 /* SOBRE */
+#sobre{
+  color: #475569;
+}
+
 .about-photo {
-  width: 100%;
+  width: 80%;
   border-radius: 18px;
 }
 
 .exp-card.right {
   position: absolute;
   bottom: -1rem;
-  right: -.5rem;
+  right: 3rem;
   background: #fff;
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0,0,0,.2);
@@ -406,22 +432,79 @@
   color: #6b7280;
 }
 
+.description {
+  line-height: 1.6;
+  letter-spacing: .02rem;
+  font-size: 1.12rem;
+}
+
 /* LISTA COM ÍCONE */
 .about-list {
   list-style: none;
   padding: 0;
+  color: #334155;
 }
 .about-list li {
   display: flex;
   align-items: center;
   gap: .8rem;
   margin-bottom: .8rem;
+  letter-spacing: .04rem;
+  font-size: 1rem;
 }
+
 .list-icon {
   width: 10px;
   height: 10px;
   background: var(--secondary);
   border-radius: 50%;
+}
+
+/* BADGES */
+.info-badge {
+  display: flex;
+  gap: 1rem;
+  border-radius: 14px;
+  align-items: center;
+}
+
+.info-badge p{
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  padding: 0.5rem;
+  border-radius: .8rem;
+}
+
+.badge-icon {
+  color: var(--secondary);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* STATS */
+
+.stats strong {
+  font-size: 2.7rem;
+  color: #0f172a;
+}
+
+.stats p {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: .04rem;
+  color: #64748b;
 }
 
 /* SERVIÇOS */
@@ -440,28 +523,6 @@
 .service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 40px rgba(34,211,238,.25);
-}
-
-/* BADGES */
-.info-badge {
-  display: flex;
-  gap: 1rem;
-  background: #f1f5f9;
-  padding: 1rem;
-  border-radius: 14px;
-  align-items: center;
-}
-
-.badge-icon {
-  background: rgba(34,211,238,.2);
-  color: var(--secondary);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
 }
 
 /* FAQ */
@@ -512,6 +573,8 @@
 <script setup>
 import Logo from './Components/Icons/logo.vue'
 import Medal from './Components/Icons/medal.vue'
+import Hat from './Components/Icons/hat.vue'
+import Work from './Components/Icons/work.vue'
 import { onMounted, ref } from 'vue'
 
 onMounted(() => {
