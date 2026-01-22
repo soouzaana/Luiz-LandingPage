@@ -1,10 +1,8 @@
 <template>
   <div class="app min-vh-100 d-flex flex-column">
-
     <!-- HEADER (SEM ALTERAR CORES/TAMANHO) -->
     <header class="navbar navbar-expand-lg navbar-dark header p-3 px-lg-5">
       <div class="container-fluid">
-
         <div class="d-flex align-items-center gap-3">
           <div class="logo-icon">
             <Logo />
@@ -17,14 +15,25 @@
         </div>
 
         <nav class="d-flex gap-4">
-          <a class="nav-link nav-underline text-light p-1" href="#inicio">Início</a>
-          <a class="nav-link nav-underline text-light p-1" href="#sobre">Sobre</a>
-          <a class="nav-link nav-underline text-light p-1" href="#servicos">Serviços</a>
-          <a class="nav-link nav-underline text-light p-1" href="#portfolio">Portfólio</a>
-          <a class="nav-link nav-underline text-light p-1" href="#contato">Contato</a>
-          <a class="nav-link nav-orcamento p-1 px-3" href="#orcamento">Orçamento</a>
+          <a class="nav-link nav-underline text-light p-1" href="#inicio"
+            >Início</a
+          >
+          <a class="nav-link nav-underline text-light p-1" href="#sobre"
+            >Sobre</a
+          >
+          <a class="nav-link nav-underline text-light p-1" href="#servicos"
+            >Serviços</a
+          >
+          <a class="nav-link nav-underline text-light p-1" href="#portfolio"
+            >Portfólio</a
+          >
+          <a class="nav-link nav-underline text-light p-1" href="#contato"
+            >Contato</a
+          >
+          <a class="nav-link nav-orcamento p-1 px-3" href="#orcamento"
+            >Orçamento</a
+          >
         </nav>
-
       </div>
     </header>
 
@@ -42,8 +51,9 @@
               Projetos elétricos e soluções energéticas de alto padrão
             </h2>
             <p class="lead mb-4">
-              Especialista em projetos elétricos residenciais, comerciais e industriais,
-              com expertise em sistemas de energia solar fotovoltaica.
+              Especialista em projetos elétricos residenciais, comerciais e
+              industriais, com expertise em sistemas de energia solar
+              fotovoltaica.
             </p>
 
             <div class="d-flex gap-3">
@@ -63,7 +73,6 @@
     <section id="sobre" class="py-5 reveal">
       <div class="container">
         <div class="row align-items-center g-5">
-
           <!-- FOTO -->
           <div class="col-lg-5 position-relative">
             <img src="../public/images/luiz.png" class="about-photo" />
@@ -71,7 +80,7 @@
             <!-- CARD À DIREITA -->
             <div class="exp-card right col-md-6">
               <div class="exp-card-content">
-                <div class="exp-card-icon"><Medal/></div>
+                <div class="exp-card-icon"><Medal /></div>
                 <div class="d-flex row px-2">
                   <strong class="text-start">10+</strong>
                   <span>Anos de experiência</span>
@@ -86,14 +95,15 @@
 
             <!-- DESCRIÇÃO -->
             <p class="mb-4 description">
-              Sou Luiz, engenheiro elétrico com mais de 10 anos de experiência em
-              projetos elétricos residenciais, comerciais e industriais. Especializado
-              em sistemas de energia solar fotovoltaica, ofereço soluções inovadoras
-              e sustentáveis para otimizar o consumo energético dos meus clientes.
-              Minha abordagem combina conhecimento técnico com atenção aos detalhes,
-              garantindo eficiência, segurança e conformidade com as normas vigentes.
-              Estou comprometido em entregar projetos de alta qualidade que atendam
-              às necessidades específicas de cada cliente.
+              Sou Luiz, engenheiro elétrico com mais de 10 anos de experiência
+              em projetos elétricos residenciais, comerciais e industriais.
+              Especializado em sistemas de energia solar fotovoltaica, ofereço
+              soluções inovadoras e sustentáveis para otimizar o consumo
+              energético dos meus clientes. Minha abordagem combina conhecimento
+              técnico com atenção aos detalhes, garantindo eficiência, segurança
+              e conformidade com as normas vigentes. Estou comprometido em
+              entregar projetos de alta qualidade que atendam às necessidades
+              específicas de cada cliente.
             </p>
 
             <!-- LISTA -->
@@ -120,7 +130,9 @@
             <div class="row g-3 mt-4">
               <div class="col-md-6">
                 <div class="info-badge">
-                  <div class="icon"><div class="badge-icon"><Hat/></div></div>
+                  <div class="icon">
+                    <div class="badge-icon"><Hat /></div>
+                  </div>
                   <div>
                     <strong>Formação</strong>
                     <p>Engenharia Elétrica</p>
@@ -129,8 +141,10 @@
               </div>
 
               <div class="col-md-6">
-                <div class="info-badge"><div class="icon">
-                  <div class="badge-icon"><Work/></div></div>
+                <div class="info-badge">
+                  <div class="icon">
+                    <div class="badge-icon"><Work /></div>
+                  </div>
                   <div>
                     <strong>CREA Ativo</strong>
                     <p>Registro profissional regular</p>
@@ -138,23 +152,33 @@
                 </div>
               </div>
             </div>
-            
-         
           </div>
-          <hr style="height:1px;"/>
+          <hr style="height: 1px" />
 
           <!-- ESTATÍSTICAS -->
           <div class="row text-center mt-2 g-4 stats">
-            <div class="col-md-3"><strong>10+</strong><p>Anos de experiência</p></div>
-            <div class="col-md-3"><strong>200+</strong><p>Projetos realizados</p></div>
-            <div class="col-md-3"><strong>150+</strong><p>Clientes satisfeitos</p></div>
-            <div class="col-md-3"><strong>500kW</strong><p>Energia solar instalada</p></div>
+            <div class="col-md-3">
+              <strong>10+</strong>
+              <p>Anos de experiência</p>
+            </div>
+            <div class="col-md-3">
+              <strong>200+</strong>
+              <p>Projetos realizados</p>
+            </div>
+            <div class="col-md-3">
+              <strong>150+</strong>
+              <p>Clientes satisfeitos</p>
+            </div>
+            <div class="col-md-3">
+              <strong>500kW</strong>
+              <p>Energia solar instalada</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-     <!-- SERVIÇOS -->
+    <!-- SERVIÇOS -->
     <section id="servicos" class="py-5 reveal services-bg">
       <div class="container">
         <h2 class="text-center mb-5 size-medium">SERVIÇOS</h2>
@@ -224,51 +248,46 @@
         </p>
       </div>
     </section>
-
   </div>
 
-   <!-- CONTATO -->
-    <section id="contato" class="py-5 reveal contato-bg">
-      <div class="container">
-        <div class="row g-5 align-items-center">
+  <!-- CONTATO -->
+  <section id="contato" class="py-5 reveal contato-bg">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <h3>Contato</h3>
+          <p>📞 (xx) xxxx-xxxx</p>
+          <p>📧 email@email.com</p>
+          <p>📍 Sua cidade - UF</p>
+          <p>⏰ Seg à Sex - 08h às 18h</p>
+        </div>
 
-          <div class="col-lg-6">
-            <h3>Contato</h3>
-            <p>📞 (xx) xxxx-xxxx</p>
-            <p>📧 email@email.com</p>
-            <p>📍 Sua cidade - UF</p>
-            <p>⏰ Seg à Sex - 08h às 18h</p>
-          </div>
-
-          <div class="col-lg-6">
-            <form class="contact-form">
-              <input type="text" placeholder="Nome" />
-              <input type="email" placeholder="Email" />
-              <textarea placeholder="Mensagem"></textarea>
-              <button class="btn btn-info rounded-pill fw-bold">
-                Enviar mensagem
-              </button>
-            </form>
-          </div>
-
+        <div class="col-lg-6">
+          <form class="contact-form">
+            <input type="text" placeholder="Nome" />
+            <input type="email" placeholder="Email" />
+            <textarea placeholder="Mensagem"></textarea>
+            <button class="btn btn-info rounded-pill fw-bold">
+              Enviar mensagem
+            </button>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="footer py-4">
-      <div class="container d-flex justify-content-between align-items-center">
-        <Logo />
-        <span>Desenvolvido por Ana M Souza</span>
-        <span>CREA: XXXXX</span>
-      </div>
-    </footer>
-
+  <!-- FOOTER -->
+  <footer class="footer py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <Logo />
+      <span>Desenvolvido por Ana M Souza</span>
+      <span>CREA: XXXXX</span>
+    </div>
+  </footer>
 </template>
 
-
 <style>
-  :root {
+:root {
   --bg: #020617;
   --primary: #38bdf8;
   --secondary: #22d3ee;
@@ -283,7 +302,9 @@
 .header {
   background: var(--bg);
   backdrop-filter: none;
-  transition: background 0.4s ease, backdrop-filter 0.4s ease;
+  transition:
+    background 0.4s ease,
+    backdrop-filter 0.4s ease;
 }
 
 .header.scrolled {
@@ -292,36 +313,36 @@
 }
 
 /* HEADER UNDERLINE */
-.logo-icon { 
-  width: 2.5rem; 
-  height: 2.5rem; 
-  display: flex; 
-} 
-
-.logo-icon svg { 
-  width: 100%; 
-  height: 100%; 
-} 
-
-.logo { 
-  font-weight: bold; 
-  font-size: 1.2rem; 
-  letter-spacing: 0.8px; 
-  line-height: 0.6; 
-  color: var(--text);
-} 
-
-.size-min { 
-  font-size: 0.7rem; 
-  letter-spacing: 0.7px; 
-  color: var(--secondary); 
+.logo-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
 }
 
-.size-medium { 
-  font-size: 1.7rem; 
-  letter-spacing: 2px; 
-  color: var(--secondary); 
-  line-height: 0.4; 
+.logo-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+  line-height: 0.6;
+  color: var(--text);
+}
+
+.size-min {
+  font-size: 0.7rem;
+  letter-spacing: 0.7px;
+  color: var(--secondary);
+}
+
+.size-medium {
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  color: var(--secondary);
+  line-height: 0.4;
 }
 
 .nav-underline {
@@ -336,7 +357,7 @@
   width: 0;
   height: 2px;
   background: var(--secondary);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .nav-underline:hover::after {
@@ -366,7 +387,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(2,6,23,.8);
+  background: rgba(2, 6, 23, 0.8);
 }
 
 .hero-content {
@@ -376,14 +397,14 @@
 
 /* BOTÕES */
 .btn-info:hover {
-  transform: scale(1.06) ;
+  transform: scale(1.06);
 }
 .btn.bg-white:hover {
   color: var(--secondary);
 }
 
 /* SOBRE */
-#sobre{
+#sobre {
   color: #475569;
 }
 
@@ -398,11 +419,11 @@
   right: 3rem;
   background: #fff;
   border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   max-width: 15rem;
 }
 
-.exp-card-content{
+.exp-card-content {
   display: flex;
   gap: 1rem;
   padding: 1rem;
@@ -411,7 +432,7 @@
 }
 
 .exp-card-icon {
-  background: rgba(34,211,238,.2);
+  background: rgba(34, 211, 238, 0.2);
   color: var(--secondary);
   width: 3.5rem;
   height: 2.5rem;
@@ -434,7 +455,7 @@
 
 .description {
   line-height: 1.6;
-  letter-spacing: .02rem;
+  letter-spacing: 0.02rem;
   font-size: 1.12rem;
 }
 
@@ -447,9 +468,9 @@
 .about-list li {
   display: flex;
   align-items: center;
-  gap: .8rem;
-  margin-bottom: .8rem;
-  letter-spacing: .04rem;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.04rem;
   font-size: 1rem;
 }
 
@@ -468,7 +489,7 @@
   align-items: center;
 }
 
-.info-badge p{
+.info-badge p {
   margin: 0;
   font-size: 0.9rem;
   color: #6b7280;
@@ -480,7 +501,7 @@
   justify-content: center;
   background: #f1f5f9;
   padding: 0.5rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
 
 .badge-icon {
@@ -503,7 +524,7 @@
 .stats p {
   margin: 0;
   font-size: 1rem;
-  letter-spacing: .04rem;
+  letter-spacing: 0.04rem;
   color: #64748b;
 }
 
@@ -517,12 +538,12 @@
   color: #fff;
   padding: 2rem;
   border-radius: 20px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 40px rgba(34,211,238,.25);
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.25);
 }
 
 /* FAQ */
@@ -557,7 +578,7 @@
 .contact-form textarea {
   width: 100%;
   margin-bottom: 1rem;
-  padding: .8rem;
+  padding: 0.8rem;
   border-radius: 10px;
   border: none;
 }
@@ -567,83 +588,90 @@
   background: #020617;
   color: #fff;
 }
-
 </style>
 
 <script setup>
-import Logo from './Components/Icons/logo.vue'
-import Medal from './Components/Icons/medal.vue'
-import Hat from './Components/Icons/hat.vue'
-import Work from './Components/Icons/work.vue'
-import { onMounted, ref } from 'vue'
+import Logo from './Components/Icons/logo.vue';
+import Medal from './Components/Icons/medal.vue';
+import Hat from './Components/Icons/hat.vue';
+import Work from './Components/Icons/work.vue';
+import { onMounted, ref } from 'vue';
 
 onMounted(() => {
   /* SCROLL REVEAL */
-  const revealObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active')
-        revealObserver.unobserve(entry.target)
-      }
-    })
-  }, { threshold: 0.15 })
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 },
+  );
 
-  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el))
+  document
+    .querySelectorAll('.reveal')
+    .forEach((el) => revealObserver.observe(el));
 
   /* CONTADOR */
-  const animateCounter = el => {
-    const target = +el.dataset.count
-    let current = 0
-    const increment = target / 60
+  const animateCounter = (el) => {
+    const target = +el.dataset.count;
+    let current = 0;
+    const increment = target / 60;
 
     const update = () => {
-      current += increment
+      current += increment;
       if (current < target) {
-        el.innerText = Math.ceil(current)
-        requestAnimationFrame(update)
+        el.innerText = Math.ceil(current);
+        requestAnimationFrame(update);
       } else {
-        el.innerText = "+" + target
+        el.innerText = '+' + target;
       }
-    }
+    };
 
-    update()
-  }
+    update();
+  };
 
-  const statsSection = document.querySelector('.stats')
+  const statsSection = document.querySelector('.stats');
   if (statsSection) {
-    const statsObserver = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting) {
-        statsSection.querySelectorAll('[data-count]').forEach(animateCounter)
-        statsObserver.disconnect()
-      }
-    }, { threshold: 0.3 })
+    const statsObserver = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          statsSection.querySelectorAll('[data-count]').forEach(animateCounter);
+          statsObserver.disconnect();
+        }
+      },
+      { threshold: 0.3 },
+    );
 
-    statsObserver.observe(statsSection)
+    statsObserver.observe(statsSection);
   }
 
   /* HEADER SCROLL */
-  const header = document.querySelector('.header')
+  const header = document.querySelector('.header');
   window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 80)
-  })
+    header.classList.toggle('scrolled', window.scrollY > 80);
+  });
 
   /* VIDEO MOBILE */
-  const video = document.querySelector('.hero-video')
+  const video = document.querySelector('.hero-video');
   if (video && window.innerWidth < 768) {
-    video.pause()
-    video.removeAttribute('autoplay')
+    video.pause();
+    video.removeAttribute('autoplay');
   }
-})
-const activeFaq = ref(null)
+});
+const activeFaq = ref(null);
 
 const faqs = [
   {
     q: 'Qual o prazo médio para desenvolvimento de um projeto elétrico?',
-    a: 'O prazo varia conforme a complexidade. Projetos residenciais levam de 7 a 15 dias, comerciais de 15 a 30 dias e industriais de 30 a 60 dias.'
-  }
-]
+    a: 'O prazo varia conforme a complexidade. Projetos residenciais levam de 7 a 15 dias, comerciais de 15 a 30 dias e industriais de 30 a 60 dias.',
+  },
+];
 
-const toggleFaq = i => {
-  activeFaq.value = activeFaq.value === i ? null : i
-}
+const toggleFaq = (i) => {
+  activeFaq.value = activeFaq.value === i ? null : i;
+};
 </script>
