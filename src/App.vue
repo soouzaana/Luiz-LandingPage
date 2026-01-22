@@ -634,7 +634,7 @@
   display: inline-block;
   margin-top: 0.5rem;
   color: var(--primary);
-  font-weight: 500; 
+  font-weight: 500;
   cursor: pointer;
   text-decoration: none;
 }
