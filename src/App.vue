@@ -195,7 +195,7 @@
         <div class="row g-4">
           <div class="col-md-4">
             <div class="service-card h-100 p-4">
-              <div class="service-icon">Icone</div>
+              <div class="service-icon"><House /></div>
               <h5 class="fw-bold text-black">Projetos Residenciais</h5>
               <p>
                 Projetos elétricos completos para residências, incluindo
@@ -204,44 +204,172 @@
               <ul class="service-list">
                 <li>
                   <span class="list-icon"></span>
+                  Entrada de energia
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Quadro de distribuição
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Iluminação
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Tomadas e circuitos
+                </li>
+              </ul>
+              <a class="service-more">Saiba mais <Arrow /></a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card h-100 p-4">
+              <div class="service-icon"><Building /></div>
+              <h5 class="fw-bold text-black">Projetos Comerciais</h5>
+              <p>
+                Soluções elétricas para estabelecimentos comerciais, escritórios
+                e lojas com foco em eficiência.
+              </p>
+              <ul class="service-list">
+                <li>
+                  <span class="list-icon"></span>
+                  Sistemas de iluminação LED
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Automação predial
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Sistemas de emergência
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Climatização
+                </li>
+              </ul>
+              <a class="service-more">Saiba mais <Arrow /></a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card h-100 p-4">
+              <div class="service-icon"><Industry /></div>
+              <h5 class="fw-bold text-black">Projetos Industriais</h5>
+              <p>
+                Projetos elétricos industriais de baixa e média tensão,
+                incluindo subestações e painéis.
+              </p>
+              <ul class="service-list">
+                <li>
+                  <span class="list-icon"></span>
+                  Subestações
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Painéis elétricos
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Sistemas de força
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Correção fator potência
+                </li>
+              </ul>
+              <a class="service-more">Saiba mais <Arrow /></a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card h-100 p-4">
+              <div class="service-icon"><Sun /></div>
+              <h5 class="fw-bold text-black">Energia Solar Fotovoltaica</h5>
+              <p>
+                Projetos completos de sistemas fotovoltaicos on-grid e off-grid
+                para geração de energia limpa.
+              </p>
+              <ul class="service-list">
+                <li>
+                  <span class="list-icon"></span>
                   Dimensionamento
                 </li>
                 <li>
                   <span class="list-icon"></span>
-                  Normas técnicas
+                  Análise de viabilidade
                 </li>
                 <li>
                   <span class="list-icon"></span>
-                  Documentação
+                  Homologação
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Monitoramento
                 </li>
               </ul>
-              <a class="service-more">Saiba mais</a>
+              <a class="service-more">Saiba mais <Arrow /></a>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div class="service-card h-100">
-              <h5>Eficiência Energética</h5>
-              <p>Redução de custos e otimização energética.</p>
-              <ul>
-                <li>Análise de consumo</li>
-                <li>Correções técnicas</li>
-                <li>Sustentabilidade</li>
+            <div class="service-card h-100 p-4">
+              <div class="service-icon"><Document /></div>
+              <h5 class="fw-bold text-black">Laudos e Regularização</h5>
+              <p>
+                Elaboração de laudos técnicos, ART e regularização de
+                instalações junto à concessionária.
+              </p>
+              <ul class="service-list">
+                <li>
+                  <span class="list-icon"></span>
+                  Laudo de instalação
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  ART
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Regularização
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  SPDA
+                </li>
               </ul>
-              <a class="btn btn-outline-info rounded-pill">Saiba mais</a>
+              <a class="service-more">Saiba mais <Arrow /></a>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div class="service-card h-100">
-              <h5>Consultoria Técnica</h5>
-              <p>Acompanhamento e orientação especializada.</p>
-              <ul>
-                <li>Execução</li>
-                <li>Vistorias</li>
-                <li>Laudos</li>
+            <div class="service-card h-100 p-4">
+              <div class="service-icon"><Energy /></div>
+              <h5 class="fw-bold text-black">Consultoria Técnica</h5>
+              <p>
+                Consultoria especializada em eficiência energética e adequação
+                de instalações às normas.
+              </p>
+              <ul class="service-list">
+                <li>
+                  <span class="list-icon"></span>
+                  Eficiência energética
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Adequação NR-10
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Análise termográfica
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Treinamentos
+                </li>
               </ul>
-              <a class="btn btn-outline-info rounded-pill">Saiba mais</a>
+              <a class="service-more">Saiba mais <Arrow /></a>
             </div>
           </div>
         </div>
@@ -592,21 +720,41 @@
 }
 
 .service-card:hover {
-  box-shadow: 0 0 40px rgba(34, 211, 238, 0.15);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
 }
 
 .service-icon {
   width: 3.5rem;
   height: 3.5rem;
-  padding: 1.5rem;
+  padding: 1rem;
   background: rgba(56, 189, 248, 0.1);
   color: var(--primary);
   border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
   margin-bottom: 1rem;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.service-icon svg {
+  width: 100%;
+  height: 100%;
+  transition:
+    fill 0.3s ease,
+    stroke 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  background: var(--primary);
+  color: #fff;
+}
+
+.service-card:hover .service-icon svg {
+  fill: currentColor;
+  stroke: currentColor;
 }
 
 .service-list {
@@ -618,9 +766,10 @@
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.04rem;
-  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.05rem;
+  font-size: 0.8rem;
+  color: #6b7280;
 }
 
 .service-list .list-icon {
@@ -637,6 +786,20 @@
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
+}
+
+.service-more svg {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: 0.3rem;
+  margin-bottom: 0.2rem;
+  rotate: 180deg;
+  transition: transform 0.3s ease; /* transição no SVG */
+}
+
+/* hover no link, movimento só no SVG */
+.service-more:hover svg {
+  transform: translateX(-5px);
 }
 
 /* FAQ */
@@ -688,7 +851,14 @@ import Logo from './Components/Icons/logo.vue';
 import Medal from './Components/Icons/medal.vue';
 import Hat from './Components/Icons/hat.vue';
 import Work from './Components/Icons/work.vue';
+import House from './Components/Icons/house.vue';
+import Arrow from './Components/Icons/arrow.vue';
+import Building from './Components/building.vue';
+import Industry from './Components/Icons/industry.vue';
+import Sun from './Components/Icons/sun.vue';
+import Document from './Components/Icons/document.vue';
 import { onMounted, ref } from 'vue';
+import Energy from './Components/Icons/energy.vue';
 
 onMounted(() => {
   /* SCROLL REVEAL */
