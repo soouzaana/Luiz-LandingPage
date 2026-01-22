@@ -322,6 +322,7 @@
 .logo-icon svg {
   width: 100%;
   height: 100%;
+  color: var(--primary);
 }
 
 .logo {
@@ -370,6 +371,11 @@
   font-weight: bold !important;
 }
 
+.nav-orcamento:hover {
+  transform: scale(1.06);
+  transition: 0.3s;
+}
+
 /* HERO */
 .hero {
   min-height: 90vh;
@@ -398,9 +404,11 @@
 /* BOTÕES */
 .btn-info:hover {
   transform: scale(1.06);
+  transition: 0.3s;
 }
 .btn.bg-white:hover {
-  color: var(--secondary);
+  color: var(--primary);
+  transition: 0.3s;
 }
 
 /* SOBRE */
