@@ -181,19 +181,41 @@
     <!-- SERVIÇOS -->
     <section id="servicos" class="py-5 reveal services-bg">
       <div class="container">
-        <h2 class="text-center mb-5 size-medium">SERVIÇOS</h2>
+        <h2 class="fs-6 size-min text-center mb-4">SERVIÇOS</h2>
+
+        <h2 class="service-desc fw-bold">
+          Soluções completas em <span class="">engenharia elétrica</span>
+        </h2>
+
+        <p class="service-p">
+          Oferecemos uma gama completa de serviços para atender todas as suas
+          necessidades em projetos elétricos e energia solar.
+        </p>
 
         <div class="row g-4">
           <div class="col-md-4">
-            <div class="service-card h-100">
-              <h5>Projetos Elétricos</h5>
-              <p>Projetos completos residenciais, comerciais e industriais.</p>
-              <ul>
-                <li>Dimensionamento</li>
-                <li>Normas técnicas</li>
-                <li>Documentação</li>
+            <div class="service-card h-100 p-4">
+              <div class="service-icon">Icone</div>
+              <h5 class="fw-bold text-black">Projetos Residenciais</h5>
+              <p>
+                Projetos elétricos completos para residências, incluindo
+                dimensionamento, quadros de distribuição e iluminação.
+              </p>
+              <ul class="service-list">
+                <li>
+                  <span class="list-icon"></span>
+                  Dimensionamento
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Normas técnicas
+                </li>
+                <li>
+                  <span class="list-icon"></span>
+                  Documentação
+                </li>
               </ul>
-              <a class="btn btn-outline-info rounded-pill">Saiba mais</a>
+              <a class="service-more">Saiba mais</a>
             </div>
           </div>
 
@@ -539,19 +561,82 @@
 /* SERVIÇOS */
 .services-bg {
   background: #f3f4f6;
+  font-family: sans-serif;
+}
+
+.service-desc {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  color: #0f172a;
+}
+
+.service-desc span {
+  color: var(--primary);
+}
+
+.service-p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #475569;
+  padding: 0 20%;
 }
 
 .service-card {
-  background: #020617;
-  color: #fff;
+  background: #fefefe;
+  color: #334155;
   padding: 2rem;
   border-radius: 20px;
   transition: 0.4s;
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 40px rgba(34, 211, 238, 0.25);
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.15);
+}
+
+.service-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 1.5rem;
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--primary);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  color: #334155;
+}
+.service-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04rem;
+  font-size: 0.9rem;
+}
+
+.service-list .list-icon {
+  width: 6px;
+  height: 6px;
+  background: var(--primary);
+  border-radius: 50%;
+}
+
+.service-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--primary);
+  font-weight: 500; 
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* FAQ */
