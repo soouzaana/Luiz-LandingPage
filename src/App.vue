@@ -24,20 +24,20 @@
           <a class="nav-link nav-underline text-light p-1" href="#servicos"
             >Serviços</a
           >
-          <a class="nav-link nav-underline text-light p-1" href="#portfolio"
-            >Portfólio</a
+          <a class="nav-link nav-underline text-light p-1" href="#faq"
+            >Dúvidas</a
           >
           <a class="nav-link nav-underline text-light p-1" href="#contato"
             >Contato</a
           >
-          <a class="nav-link nav-orcamento p-1 px-3" href="#orcamento"
+          <a class="nav-link nav-orcamento p-1 px-3" href="#contato"
             >Orçamento</a
           >
         </nav>
       </div>
     </header>
 
-    <!-- HERO (INALTERADO VISUALMENTE) -->
+    <!-- HERO -->
     <section id="inicio" class="hero position-relative">
       <video class="hero-video" autoplay muted loop playsinline>
         <source src="./videos/energia.mp4" type="video/mp4" />
@@ -57,12 +57,12 @@
             </p>
 
             <div class="d-flex gap-3">
-              <button class="btn btn-info btn-lg rounded-pill px-5 fw-bold">
+              <a href="#contato" class="btn btn-info btn-lg rounded-pill px-5 fw-bold">
                 Solicitar orçamento
-              </button>
-              <button class="btn bg-white btn-lg rounded-pill px-5 fw-bold">
+              </a>
+              <a href="#servicos" class="btn bg-white btn-lg rounded-pill px-5 fw-bold">
                 Conhecer serviços
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -377,7 +377,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="py-5 reveal">
+    <section id="faq" class="py-5 reveal">
       <div class="container">
         <p class="fs-6 fw-medium size-min text-center">PERGUNTAS FREQUENTES</p>
         <h2 class="text-center mb-3 fw-bold text-black faq-title">
@@ -443,7 +443,7 @@
             <span class="contact-icon"><Phone /></span>
             <div>
               <span>Telefone</span>
-              <span>(xx) xxxx-xxxx</span>
+              <span>(69) 9327-1539</span>
             </div>
           </div>
 
@@ -451,7 +451,7 @@
             <span class="contact-icon"><Email /></span>
             <div>
               <span>Email</span>
-              <span>(xx) xxxx-xxxx</span>
+              <span>luizflavio.88@gmail.com</span>
             </div>
           </div>
 
@@ -459,7 +459,7 @@
             <span class="contact-icon"><Locate /></span>
             <div>
               <span>Localização</span>
-              <span>(xx) xxxx-xxxx</span>
+              <span>Porto Velho - RO</span>
             </div>
           </div>
 
@@ -467,16 +467,16 @@
             <span class="contact-icon"><Clock /></span>
             <div>
               <span>Horário</span>
-              <span>(xx) xxxx-xxxx</span>
+              <span>Seg-Sex: 8h às 18h</span>
             </div>
           </div>
 
           <hr />
           <p class="contact-media">Redes Sociais</p>
           <div class="social-links d-flex gap-3">
-            <a href="#" class="contact-social"><Facebook /></a>
-            <a href="#" class="contact-social"><LinkedIn /></a>
-            <a href="#" class="contact-social"><Instagram /></a>
+            <a href="https://www.facebook.com/luiz.fl.5" class="contact-social"><Facebook /></a>
+            <a href="https://www.linkedin.com/in/luiz-flavio-tecn%C3%B3logo/" class="contact-social"><LinkedIn /></a>
+            <a href="https://www.instagram.com/luizflavio_fl/" class="contact-social"><Instagram /></a>
           </div>
         </div>
 
@@ -563,7 +563,7 @@
           <span class="size-min">EM ENERGIA</span>
         </div>
       </div>
-      <span>Desenvolvido por <a href="#">Ana M Souza</a></span>
+      <span>Desenvolvido por <a href="https://anamaria-portfolio.netlify.app/">Ana M Souza</a></span>
       <span>CREA: XXXXX</span>
     </div>
   </footer>
@@ -1275,6 +1275,11 @@
 .footer {
   background: #020617;
   color: #fff;
+}
+
+.footer a {
+  color: #38bdf8;
+  text-decoration: none;
 }
 </style>
 
