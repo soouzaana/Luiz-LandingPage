@@ -379,23 +379,49 @@
     <!-- FAQ -->
     <section class="py-5 reveal">
       <div class="container">
-        <h2 class="text-center mb-5 size-medium">PERGUNTAS FREQUENTES</h2>
+        <p class="fs-6 fw-medium size-min text-center">PERGUNTAS FREQUENTES</p>
+        <h2 class="text-center mb-3 fw-bold text-black faq-title">
+          Dúvidas <span class="color-primary">comuns</span>
+        </h2>
+
+        <p class="text-center color-text faq-desc">
+          Aqui estão as respostas para as perguntas mais frequentes sobre
+          projetos elétricos e energia solar.
+        </p>
 
         <div class="faq-item" v-for="(faq, i) in faqs" :key="i">
           <button class="faq-question" @click="toggleFaq(i)">
-            {{ faq.q }}
-            <span>{{ activeFaq === i ? '−' : '+' }}</span>
+            <!-- coluna 1 -->
+            <div class="faq-icon">
+              <Help />
+            </div>
+
+            <!-- coluna 2 -->
+            <div class="faq-content">
+              <span class="faq-text">{{ faq.q }}</span>
+            </div>
+
+            <!-- coluna 3 -->
+            <div class="faq-arrow-wrapper">
+              <ArrowSimple
+                class="faq-arrow"
+                :class="{ open: activeFaq === i }"
+              />
+            </div>
           </button>
 
-          <div class="faq-answer" v-show="activeFaq === i">
-            {{ faq.a }}
+          <div class="faq-answer-wrapper" :class="{ open: activeFaq === i }">
+            <div class="faq-answer">
+              {{ faq.a }}
+            </div>
           </div>
         </div>
 
-        <p class="text-center mt-5">
-          Não encontrou sua dúvida?
-          <a href="#contato" class="text-info fw-bold">Entre em contato</a>
-        </p>
+        <div class="faq-duvida text-center mt-5">
+          <h5>Não encontrou sua dúvida?</h5>
+          <p>Entre em contato e terei prazer em responder suas perguntas</p>
+          <a href="#contato">Falar com Luiz</a>
+        </div>
       </div>
     </section>
   </div>
@@ -439,13 +465,21 @@
 <style>
 :root {
   --bg: #020617;
-  --primary: #38bdf8;
+  --primary: #0ea5e9;
   --secondary: #22d3ee;
   --text: #e5e7eb;
 }
 
 .app {
   font-family: Inter, sans-serif;
+}
+
+.color-primary {
+  color: var(--primary);
+}
+
+.color-text {
+  color: #475569;
 }
 
 /* HEADER */
@@ -803,9 +837,46 @@
 }
 
 /* FAQ */
-.faq-item {
-  border-bottom: 1px solid #e5e7eb;
+.faq-title {
+  font-size: 3rem;
   margin-bottom: 1rem;
+}
+
+.faq-desc {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  padding: 0 23%;
+}
+
+.faq-item {
+  border: 2px solid #e5e7eb;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.faq-icon {
+  background: #f1f5f9;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding: 0.7rem;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.faq-icon svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  color: #8e9dab;
+  transition: color 0.3s ease;
 }
 
 .faq-question {
@@ -814,14 +885,128 @@
   border: none;
   padding: 1rem 0;
   font-weight: 600;
-  display: flex;
-  justify-content: space-between;
   cursor: pointer;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.faq-arrow {
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: transform 0.35s ease;
+  color: #64748b;
+}
+
+.faq-content {
+  text-align: left;
+}
+
+.faq-text {
+  font-size: 1.1rem;
+  color: #0f172a;
+  transition: color 0.3s ease;
+}
+
+/* quando aberto */
+.faq-arrow.open {
+  transform: rotate(180deg);
+}
+.faq-arrow-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-answer-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer-wrapper.open {
+  max-height: 10rem;
 }
 
 .faq-answer {
-  padding-bottom: 1rem;
+  padding: 0 0 1rem 4.8rem;
   color: #4b5563;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.faq-question {
+  transition: color 0.3s ease;
+}
+
+.faq-item {
+  transition: border-color 0.3s ease;
+}
+
+.faq-item:has(.faq-answer-wrapper.open) {
+  border-color: var(--primary);
+}
+
+/* FAQ aberto — estado ativo */
+.faq-item:has(.faq-answer-wrapper.open) .faq-icon {
+  background: rgba(56, 189, 248, 0.15);
+}
+
+.faq-item:has(.faq-answer-wrapper.open) .faq-icon svg {
+  color: var(--primary);
+}
+
+.faq-item:has(.faq-answer-wrapper.open) .faq-text {
+  color: var(--primary);
+}
+
+.faq-duvida {
+  background-color: #0ea5e91a;
+  border: 0.5px solid #0ea5e92a;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.faq-duvida h5 {
+  font-weight: bold;
+}
+
+.faq-duvida p {
+  color: #475569;
+  font-size: 1rem;
+}
+
+.faq-duvida a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #388df8;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.faq-duvida a {
+  padding: 0.75rem 1.5rem; /* px-6 py-3 */
+  background-color: #38bdf8; /* bg-sky-400 */
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 9999px; /* rounded-full */
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.faq-duvida a:hover {
+  background-color: #0ea5e9; /* hover:bg-sky-500 */
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.25); /* hover:shadow-lg */
+  transform: translateY(-1px); /* sensação de elevação */
 }
 
 /* CONTATO */
@@ -852,13 +1037,15 @@ import Medal from './Components/Icons/medal.vue';
 import Hat from './Components/Icons/hat.vue';
 import Work from './Components/Icons/work.vue';
 import House from './Components/Icons/house.vue';
-import Arrow from './Components/Icons/arrow.vue';
+import Arrow from './Components/Icons/Arrows/arrow.vue';
+import ArrowSimple from './Components/Icons/Arrows/arrow-simple.vue';
 import Building from './Components/building.vue';
 import Industry from './Components/Icons/industry.vue';
 import Sun from './Components/Icons/sun.vue';
 import Document from './Components/Icons/document.vue';
 import { onMounted, ref } from 'vue';
 import Energy from './Components/Icons/energy.vue';
+import Help from './Components/Icons/help.vue';
 
 onMounted(() => {
   /* SCROLL REVEAL */
@@ -930,7 +1117,35 @@ const activeFaq = ref(null);
 const faqs = [
   {
     q: 'Qual o prazo médio para desenvolvimento de um projeto elétrico?',
-    a: 'O prazo varia conforme a complexidade. Projetos residenciais levam de 7 a 15 dias, comerciais de 15 a 30 dias e industriais de 30 a 60 dias.',
+    a: 'O prazo varia de acordo com a complexidade do projeto. Para projetos residenciais, geralmente leva de 7 a 15 dias. Projetos comerciais entre 15 a 30 dias, e projetos industriais podem levar de 30 a 60 dias. Esses prazos incluem visita técnica, desenvolvimento e revisões.',
+  },
+  {
+    q: 'Quais informações são necessárias para iniciar um projeto elétrico?',
+    a: 'Para iniciar um projeto elétrico, são necessárias informações como plantas arquitetônicas, especificações de carga elétrica, requisitos de iluminação, localização do imóvel, normas técnicas aplicáveis e qualquer necessidade especial do cliente. Uma visita técnica também pode ser necessária para levantamento de dados.',
+  },
+  {
+    q: 'Vocês oferecem suporte para aprovação do projeto junto à concessionária?',
+    a: 'Sim, oferecemos suporte completo para aprovação do projeto junto à concessionária de energia. Isso inclui a preparação e envio da documentação necessária, acompanhamento do processo de aprovação e comunicação com a concessionária para garantir que todas as exigências sejam atendidas.',
+  },
+  {
+    q: 'Quais são os benefícios de investir em energia solar fotovoltaica?',
+    a: 'Investir em energia solar fotovoltaica traz diversos benefícios, como redução significativa na conta de energia elétrica, retorno sobre o investimento a médio e longo prazo, valorização do imóvel, contribuição para a sustentabilidade ambiental e independência energética. Além disso, sistemas solares podem ser elegíveis para incentivos fiscais e linhas de financiamento específicas.',
+  },
+  {
+    q: 'É possível fazer projeto de energia solar para qualquer tipo de imóvel?',
+    a: 'Sim! Desenvolvemos projetos fotovoltaicos para residências, comércios, indústrias e áreas rurais. Fazemos uma análise de viabilidade técnica e econômica para cada caso, considerando área disponível, consumo energético e orientação do telhado.',
+  },
+  {
+    q: 'Vocês fazem também a execução da obra ou apenas o projeto?',
+    a: 'Focamos no desenvolvimento de projetos elétricos de alta qualidade. No entanto, posso indicar profissionais de confiança para executar a instalação seguindo rigorosamente o projeto desenvolvido. Também ofereço acompanhamento técnico durante a execução.',
+  },
+  {
+    q: 'Quais normas técnicas vocês seguem nos projetos elétricos?',
+    a: 'Nossos projetos seguem rigorosamente as normas técnicas brasileiras, incluindo a NBR 5410 para instalações elétricas de baixa tensão, NBR 14039 para média tensão, e outras normas específicas conforme o tipo de instalação. Garantimos que todos os projetos estejam em conformidade com as regulamentações vigentes para segurança e eficiência.',
+  },
+  {
+    q: 'Como funciona o orçamento? É gratuito?',
+    a: 'Sim, a primeira consulta e orçamento são totalmente gratuitos! Após entender suas necessidades, apresento uma proposta detalhada com escopo, prazos e valores. O projeto só é iniciado após sua aprovação formal.',
   },
 ];
 
