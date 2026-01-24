@@ -40,7 +40,7 @@
     <!-- HERO -->
     <section id="inicio" class="hero position-relative">
       <video class="hero-video" autoplay muted loop playsinline>
-        <source src="./videos/energia.mp4" type="video/mp4" />
+        <source src="../public/energia.mp4" type="video/mp4" />
       </video>
       <div class="hero-overlay"></div>
 
