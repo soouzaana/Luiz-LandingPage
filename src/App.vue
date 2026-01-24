@@ -429,23 +429,116 @@
   <!-- CONTATO -->
   <section id="contato" class="py-5 reveal contato-bg">
     <div class="container">
+      <h3 class="fs-6 size-min text-center mb-3">CONTATO</h3>
+      <h1 class="text-center mb-3 fw-bold text-white faq-title">
+        Vamos conversar sobre seu <span class="color-primary">projeto?</span>
+      </h1>
+      <p class="text-center faq-desc color-grey">
+        Entre em contato para solicitar um orçamento ou tirar suas dúvidas.
+        Responderei o mais breve possível.
+      </p>
       <div class="row g-5 align-items-center">
         <div class="col-lg-6">
-          <h3>Contato</h3>
-          <p>📞 (xx) xxxx-xxxx</p>
-          <p>📧 email@email.com</p>
-          <p>📍 Sua cidade - UF</p>
-          <p>⏰ Seg à Sex - 08h às 18h</p>
+          <div class="contact-info">
+            <span class="contact-icon"><Phone /></span>
+            <div>
+              <span>Telefone</span>
+              <span>(xx) xxxx-xxxx</span>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <span class="contact-icon"><Email /></span>
+            <div>
+              <span>Email</span>
+              <span>(xx) xxxx-xxxx</span>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <span class="contact-icon"><Locate /></span>
+            <div>
+              <span>Localização</span>
+              <span>(xx) xxxx-xxxx</span>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <span class="contact-icon"><Clock /></span>
+            <div>
+              <span>Horário</span>
+              <span>(xx) xxxx-xxxx</span>
+            </div>
+          </div>
+
+          <hr />
+          <p class="contact-media">Redes Sociais</p>
+          <div class="social-links d-flex gap-3">
+            <a href="#" class="contact-social"><Facebook /></a>
+            <a href="#" class="contact-social"><LinkedIn /></a>
+            <a href="#" class="contact-social"><Instagram /></a>
+          </div>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 form-container">
           <form class="contact-form">
-            <input type="text" placeholder="Nome" />
-            <input type="email" placeholder="Email" />
-            <textarea placeholder="Mensagem"></textarea>
-            <button class="btn btn-info rounded-pill fw-bold">
-              Enviar mensagem
-            </button>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Nome Completo</label>
+                <input
+                  type="text"
+                  placeholder="Seu nome completo"
+                  required
+                  class="form-control border border-secondary text-white"
+                />
+              </div>
+              <div class="col-md-6">
+                <label>Email</label>
+                <input
+                  type="email"
+                  placeholder="seu@email.com"
+                  required
+                  class="form-control border border-secondary"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <label>Telefone</label>
+                <input
+                  type="tel"
+                  placeholder="(11) 99999-9999"
+                  class="form-control border border-secondary"
+                />
+              </div>
+              <div class="col-md-6">
+                <label>Serviço</label>
+                <select required class="form-select border border-secondary">
+                  <option value="">Selecione o serviço</option>
+                  <option>Projeto Industrial</option>
+                  <option>Projeto Comercial</option>
+                  <option>Projeto Residencial</option>
+                  <option>Energia Solar</option>
+                  <option>
+                    Instalação de Carregadores para Carro Elétrico
+                  </option>
+                  <option>Laudos e Regularização</option>
+                  <option>Consultoria</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label>Mensagem</label>
+              <textarea
+                placeholder="Descreva seu projeto ou dúvida..."
+                rows="4"
+                class="form-control border border-secondary"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit"><Airplane/> Enviar Mensagem</button>
           </form>
         </div>
       </div>
@@ -480,6 +573,10 @@
 
 .color-text {
   color: #475569;
+}
+
+.color-grey {
+  color: #94a3b8;
 }
 
 /* HEADER */
@@ -852,7 +949,7 @@
   border: 2px solid #e5e7eb;
   border-radius: 1rem;
   font-size: 1.2rem;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -863,8 +960,6 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
   padding: 0.7rem;
 
   transition:
@@ -1015,6 +1110,144 @@
   color: #fff;
 }
 
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-icon {
+  background: #38bdf81a;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 1rem;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.contact-icon svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+.contact-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info div span:first-child {
+  font-weight: normal;
+  font-size: 0.87rem;
+  color: #6b7280;
+}
+
+.contact-info div span:last-child {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.contact-media {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #64748b;
+}
+
+.contact-social {
+  background: #1e293b;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 1rem;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.contact-social svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  color: #94a3b8;
+  transition: color 0.3s ease;
+}
+
+.form-container {
+  background-color: rgba(15, 23, 42, 0.5);
+  padding: 30px;
+  border: 1px solid #1e293b;
+  border-radius: 15px;
+}
+
+.contact-form label {
+  color: #cbd5e1;
+  font-size: 0.87rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  background: #1e293b;
+  color: #94a3b8;
+}
+
+.contact-form input::placeholder,
+.contact-form select::placeholder,
+.contact-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #4da3ff;
+  background: #1e293b;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background: #38bdf8;
+  color: #020617;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.btn-submit:hover {
+  background: #4da3ff;
+}
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -1039,13 +1272,21 @@ import Work from './Components/Icons/work.vue';
 import House from './Components/Icons/house.vue';
 import Arrow from './Components/Icons/Arrows/arrow.vue';
 import ArrowSimple from './Components/Icons/Arrows/arrow-simple.vue';
-import Building from './Components/building.vue';
+import Building from './Components/Icons/building.vue';
 import Industry from './Components/Icons/industry.vue';
 import Sun from './Components/Icons/sun.vue';
 import Document from './Components/Icons/document.vue';
-import { onMounted, ref } from 'vue';
 import Energy from './Components/Icons/energy.vue';
 import Help from './Components/Icons/help.vue';
+import Phone from './Components/Icons/phone.vue';
+import Email from './Components/Icons/email.vue';
+import Locate from './Components/Icons/locate.vue';
+import Clock from './Components/Icons/clock.vue';
+import Facebook from './Components/Icons/Socials/facebook.vue';
+import LinkedIn from './Components/Icons/Socials/linkedin.vue';
+import Instagram from './Components/Icons/Socials/instagram.vue';
+import { onMounted, ref } from 'vue';
+import Airplane from './Components/Icons/airplane.vue';
 
 onMounted(() => {
   /* SCROLL REVEAL */
