@@ -1,6 +1,6 @@
 <template>
   <div class="app min-vh-100 d-flex flex-column">
-    <!-- HEADER (SEM ALTERAR CORES/TAMANHO) -->
+    <!-- HEADER -->
     <header class="navbar navbar-expand-lg navbar-dark header p-3 px-lg-5">
       <div class="container-fluid">
         <div class="d-flex align-items-center gap-3">
@@ -538,7 +538,9 @@
               ></textarea>
             </div>
 
-            <button type="submit" class="btn-submit"><Airplane/> Enviar Mensagem</button>
+            <button type="submit" class="btn-submit">
+              <Airplane /> Enviar Mensagem
+            </button>
           </form>
         </div>
       </div>
@@ -547,9 +549,21 @@
 
   <!-- FOOTER -->
   <footer class="footer py-4">
-    <div class="container d-flex justify-content-between align-items-center">
-      <Logo />
-      <span>Desenvolvido por Ana M Souza</span>
+    <hr />
+    <div
+      class="container d-flex justify-content-between align-items-center pt-3"
+    >
+      <div class="d-flex gap-2">
+        <div class="logo-icon">
+          <Logo />
+        </div>
+        <div class="logo pt-1">
+          <span>LUIZ</span><br />
+          <span class="size-min">PROJETOS E TECNOLOGIA</span><br />
+          <span class="size-min">EM ENERGIA</span>
+        </div>
+      </div>
+      <span>Desenvolvido por <a href="#">Ana M Souza</a></span>
       <span>CREA: XXXXX</span>
     </div>
   </footer>
